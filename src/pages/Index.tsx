@@ -1,6 +1,6 @@
 
 import { useEffect } from 'react';
-import { ArrowRight, Calendar, BarChart3, Users, Clock, Award, BookOpen } from 'lucide-react';
+import { ArrowRight, Calendar, BarChart3, Users, Clock, Award, BookOpen, star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { toast } from 'sonner';
@@ -395,8 +395,8 @@ const TestimonialCard = ({ quote, name, title, image, delay, isVisible }: {
       style={{ transitionDelay: `${delay}ms` }}
     >
       <div className="mb-6">
-        {[1, 2, 3, 4, 5].map(star => (
-          <Star key={star} className="inline-block h-5 w-5 text-yellow-400 mr-1" fill="currentColor" />
+        {[1, 2, 3, 4, 5].map(s => (
+          <star key={s} className="inline-block h-5 w-5 text-yellow-400 mr-1" fill="currentColor" />
         ))}
       </div>
       <blockquote className="mb-6 text-gray-700">"{quote}"</blockquote>
