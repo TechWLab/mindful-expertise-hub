@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Calendar, Clock, star, ExternalLink } from 'lucide-react';
+import { Calendar, Clock, Star, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIntersectionObserver } from '@/lib/motion';
 
@@ -43,7 +43,7 @@ const ExpertCard = ({ expert }: { expert: ExpertProps }) => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
           <div className="absolute bottom-3 left-3 right-3 flex justify-between items-center">
             <div className="flex items-center bg-white/90 backdrop-blur-xs rounded-full px-2 py-1">
-              <star className="h-3.5 w-3.5 text-yellow-400 mr-1" fill="currentColor" />
+              <Star className="h-3.5 w-3.5 text-yellow-400 mr-1" fill="currentColor" />
               <span className="text-sm font-medium">{expert.rating.toFixed(1)}</span>
               <span className="text-xs text-gray-500 ml-1">({expert.reviewCount})</span>
             </div>
